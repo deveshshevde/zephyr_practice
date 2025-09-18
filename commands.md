@@ -3,7 +3,8 @@
 ### Console :
 ```python -m serial.tools.miniterm /dev/ttyACM0```
 ### Remote server
-```pi@raspberrypi:/mnt/sda1/shared/zephyr_practice $ docker run -it \
+```
+pi@raspberrypi:/mnt/sda1/shared/zephyr_practice $ docker run -it \
   -p 2222:22 \
   -p 8800:8800 \
   -v $(pwd):/workspace \
@@ -21,5 +22,17 @@ pi@raspberrypi:/mnt/sda1/shared/zephyr_practice $ sudo docker run -it   -p 2222:
 [2025-09-18T19:03:24.475Z] info    - Not serving HTTPS
 [2025-09-18T19:03:24.475Z] info  Session server listening on /root/.local/share/code-server/code-server-ipc.sock
 [19:04:04] 
+
+
+
+
+[19:04:04] Extension host agent started.
+File not found: /usr/lib/code-server/lib/vscode/out/vsda_bg.wasm
+File not found: /usr/lib/code-server/lib/vscode/out/vsda.js
+[19:04:06] [172.17.0.1][e3daa4b3][ManagementConnection] New connection established.
+[19:04:08] [172.17.0.1][40582200][ExtensionHostConnection] New connection established.
+[19:04:08] [172.17.0.1][40582200][ExtensionHostConnection] <54> Launched Extension Host Process.
+[19:04:58] [172.17.0.1][e3daa4b3][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+
 
 ```
